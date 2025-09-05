@@ -1,31 +1,147 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title> ROTOM Corp. About Us</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style> 
-	h1 {text-align: center;}
-    /* Header/Logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: black;
-  font-size: 30px;
-}
-
-/* Page Content */
-.content {padding:20px;}
-</style> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROTOM Corp. | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #f4f8fb;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 16px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #1abc9c;
+        }
+        .header {
+            padding: 60px 20px 30px 20px;
+            text-align: center;
+            background: #1abc9c;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
+        .mission {
+            text-align: center;
+            margin: 40px auto 30px auto;
+            max-width: 700px;
+            font-size: 22px;
+            color: #333;
+        }
+        .section {
+            background: #fff;
+            margin: 30px auto;
+            padding: 30px 20px;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .section h2 {
+            color: #1abc9c;
+            margin-top: 0;
+        }
+        .team-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .team-list li {
+            background: #eafaf1;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #222;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .services-list li {
+            background: #f0f0f0;
+            padding: 18px 28px;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #333;
+            min-width: 180px;
+            text-align: center;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 32px; }
+            .section { padding: 18px 6px; }
+            .mission { font-size: 18px; }
+        }
+    </style>
 </head>
-   
-<body style="background-color:powderblue;">
 <body>
-<div class="header"> 
-    <h1>ROTOM Corp. About Us</h1>
-</div>
-    <h2> Meet the team! </h2>
-    <p> Julia Chaidez, Julian Cabello, Julianna Arzola, Patrick Hwang, Emily Panfilo </p>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="header" id="home">
+        <h1>ROTOM Corp.</h1>
+        <div class="mission">
+            Empowering businesses with innovative solutions and a commitment to excellence.
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>ROTOM Corp. is dedicated to delivering top-notch services and products to our clients. Our team is passionate about driving success and innovation in every project we undertake.</p>
+        <h3>Meet the Team</h3>
+        <ul class="team-list">
+            <li>Julia Chaidez</li>
+            <li>Julian Cabello</li>
+            <li>Julianna Arzola</li>
+            <li>Patrick Hwang</li>
+            <li>Emily Panfilo</li>
+        </ul>
+    </div>
+    <div class="section" id="services">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>Social Media Management</li>
+            <li>Software Development</li>
+            <li>GitHub repository</li>
+            <li>Documentation </li>
+            <li>Meeting Logs</li>
+        </ul>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@rotomcorp.com">info@rotomcorp.com</a></p>
+            <p>3801 West Temple Avenue, Pomona, CA 91768</p>
+        </div>
+    </div>
 </body>
 </html>
